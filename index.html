@@ -4,26 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css"
+    />
     <title>Coding Quiz</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
   <body>
-    <header class="header">
-      <!-- to display 'view high score' button and timer -->
-      <button class="btn-vhs">View High Scores</button>
-      <div>Time: 25</div>
+    <header class="row d-flex justify-content-between pt-2 px-5" id="header">
+      <button class="btn btn-vhs">View High Scores</button>
+      <div id="timer">Time: 0</div>
     </header>
-    <main class="page-content">
-      <!-- to display quiz -->
-      <h1 id="main-head">Coding Quiz Challenge</h1>
-      <p id="main-p">
-        Try to answer the following code-related questions within the time
-        limit. Keep in mind that incorrect answers will penalize your score/time
-        by ten seconds!
-      </p>
-      <button id="start-quiz">Start Quiz</button>
+    <main class="page-content pt-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-6 text-center" id="question-text">
+          <h4 id="main-head">Coding Quiz Challenge</h4>
+          <p id="main-p">
+            Try to answer the following code-related questions within the time
+            limit. Keep in mind that incorrect answers will penalize your
+            score/time by ten seconds!
+          </p>
+          <button type="button" class="btn text-light" id="start-quiz">
+            Start Quiz
+          </button>
+        </div>
+      </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
